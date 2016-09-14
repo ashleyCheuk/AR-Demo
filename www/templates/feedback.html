@@ -1,0 +1,34 @@
+<ion-pane>
+  <ion-content>
+    <ion-list>
+      <form ng-submit="sendContact()">
+            <div class="list">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Your Name</span>
+                    <input type="text" ng-model="contact.name" placeholder="Jane Doe">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Email</span>
+                    <input type="text" ng-model="contact.email" placeholder="jane@email.com">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Message</span>
+                    <input type="text" ng-model="contact.message" placeholder="It would be great if you could add my #TweetHour">
+                </label>
+                <label class="item item-input item-stacked-label">
+                  <ion-toggle id="ar_toggle_feedback" ng-model="contactNotification.checked"
+                                  ng-change="contactNotificationChange()">
+                        Would you like to be contacted?
+                  </ion-toggle>
+                </label>
+                <padding>
+                    <button class="button button-balanced button-block">
+                        Send
+                    </button>
+                </padding>
+            </div>
+        </form>
+
+    <button ng-click="goBack()">Cancel</button>
+  </ion-content>
+</ion-pane>

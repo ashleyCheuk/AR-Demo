@@ -1,0 +1,33 @@
+<ion-pane>
+  <ion-content>
+    <div id="logo_container">
+      <img id="logo" src="img/National Pharmacies Logo.JPG"></img>
+    </div>
+    <div id="content">
+      <div id="floated-imgs">
+        <img id ="memberCard" src="img/memberCard.png"></img>
+        <img id = "coupon_button" src="img/coupon_button.png" ng-click="gotoCoupons()"></img>
+      </div>
+    </div>
+    <img id="vicks" class="bigEntrance" src="img/vicksV2.png" onclick="javascript:takeCoupon(this)"></img>
+    <img id="c_vitaman" class="bigEntrance" src="img/c_vitamanV2.png" onclick="javascript:takeCoupon(this)"></img>
+    <img id="lozenger" class="bigEntrance" src="img/lozengerV2.png" onclick="javascript:takeCoupon(this)"></img>
+    <img id="coupon" class="bigEntrance" src="img/coupon_gift.png" onclick="javascript:takeCoupon(this)"></img>
+    <div id="container">
+      <img id="barcode" src="http://www.gs1.org/sites/default/files/docs/barcodes/GS1-128.png" onclick="javascript:changeView()"><img>
+    </div>
+    <div id="footer">
+      <div id="nurseHolder">
+        <img id="nurse_gif" src="img/nurse.gif" onclick="javascript:showSale()"></img>
+      </div>
+      <div>
+        <ion-toggle id="ar_toggle" ng-model="pushNotification.checked"
+                        ng-change="pushNotificationChange()">
+              AR
+        </ion-toggle>
+        <img id="feedback" src="img/feedback.png" ng-click="gotoFeedback()"></img>
+        <img id="storeLocator" src="img/storeLocator.png" ng-click="gotoPanel()"></img>
+      </div>
+    </div>
+  </ion-content>
+</ion-pane>

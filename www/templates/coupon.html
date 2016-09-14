@@ -1,0 +1,11 @@
+<ion-pane>
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="task in tasks">
+        <img src={{task.title}}></img>
+      </ion-item>
+    </ion-list>
+
+    <button ng-click="goBack()">Go Back</button>
+  </ion-content>
+</ion-pane>

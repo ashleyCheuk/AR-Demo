@@ -1,0 +1,129 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+#barcode
+{
+	width:400px;
+	height:400px;
+	position:absolute;
+	left:37px;
+	top:279px;
+	z-index:200;
+	display:none;
+}
+
+#logo_container
+{
+	display: table;
+	margin: 0 auto;
+	padding-bottom: 25px;
+	z-index:200;
+}
+
+#content
+{
+	display: table;
+	margin: 0 auto;
+}
+
+#ar_toggle,#ar_toggle_feedback
+{
+	 background-color: transparent;
+	 border: none;
+	 float:left;
+}
+
+#ar_toggle_feedback
+{
+	margin-left:-16px;
+}
+
+#footer
+{
+	position:absolute;
+   bottom:0;
+}
+#nurse_gif
+{
+	width:130px;
+	margin-left: 60px;
+}
+
+#feedback
+{
+	width:70px;
+	margin-top:-30px;
+	margin-left:40px;
+}
+
+#floated-imgs
+{
+	float:right;
+}
+
+#floated-imgs img
+{
+	display: block;
+}
+
+#memberCard
+{
+	margin-left:70px;
+	margin-bottom: 20px;
+}
+
+#storeLocator
+{
+	width:70px;
+	margin-top:-30px;
+	margin-left:70px;
+}
+
+#nurseHolder
+{
+	display: table;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+
+#vicks,#c_vitaman,#lozenger,#coupon
+{
+	width:90px;
+	position: absolute;;
+	display: none;
+	z-index:600;
+}
+
+#coupon
+{
+		left:300px;
+		top:285px;
+}
+
+#vicks
+{
+	top:280px;
+	left:135px;
+}
+
+#c_vitaman
+{
+	top:150px;
+	left:50px;
+}
+
+#lozenger
+{
+	top:150px;
+	left:250px;
+}

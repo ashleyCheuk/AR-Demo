@@ -1,0 +1,21 @@
+<ion-view title="Login" id="login" class=" ">
+  <ion-content padding="true" class="has-header">
+      <div id="logo_container">
+        <img src="img/National Pharmacies Logo.JPG"></img>
+      </div>
+      <form ng-submit="doLogin()" id="login-form1" class="list ">
+          <ion-list id="login-list2" class=" ">
+              <label class="item item-input " id="login-input1">
+                  <span class="input-label">Username</span>
+                  <input type="text" ng-model="loginData.username" placeholder="">
+              </label>
+              <label class="item item-input " id="login-input2">
+                  <span class="input-label">Password</span>
+                  <input type="password" ng-model="loginData.password" placeholder="">
+              </label>
+          </ion-list>
+          <div class="spacer" style="height: 40px;"></div>
+          <button type="submit"  class=" button button-positive  button-block ">Log in</button>
+      </form>
+  </ion-content>
+</ion-view>
